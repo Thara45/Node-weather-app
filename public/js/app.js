@@ -29,7 +29,7 @@ weatherForm.addEventListener('submit', (e) => {
                 msgTwo.textContent = ""
             } else {
                 msgTwo.textContent = ''
-                msgOne.textContent = "The temperature is " + data.forecast.temperature + " and today will be like " + data.forecast.summary
+                msgOne.textContent = "The temperature is " + data.forecast.temperature + " and today will be like " + data.forecast.summary + " and the daily status is " + data.forecast.dailyStatus
             }
         })
     })

@@ -12,7 +12,8 @@ const forecast = (lat, lng, callback) => {
         }else {
             callback(undefined, {
                 temperature : body.currently.temperature,
-                summary: body.daily.data[0].summary
+                summary: body.daily.data[0].summary,
+                dailyStatus: body.daily.summary
             })
         }
     })
